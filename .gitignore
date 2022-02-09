@@ -1,0 +1,15 @@
+# ignore everything by default
+*
+
+# tracked files & dirs
+!.editorconfig
+!.eslintrc
+!.gitattributes
+!.gitignore
+!.npmrc
+!.prettierrc
+!package.json
+!pnpm-lock.yaml
+!src
+!src/**
+!tsconfig.json
