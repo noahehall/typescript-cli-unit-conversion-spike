@@ -29,5 +29,8 @@ export const compare = ({
   const expectedvalue = convert(from, to, value);
   if (expectedvalue === RESULT_TYPE.INV) return RESULT_TYPE.INV;
 
-  return expectedvalue === roundToTenths(response) ? RESULT_TYPE.TRUE : RESULT_TYPE.FALSE;
+  return (
+    (expectedvalue === roundToTenths(response) ? RESULT_TYPE.TRUE : RESULT_TYPE.FALSE) +
+    `: ${expectedvalue}`
+  );
 };
